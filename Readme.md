@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Dima Rayi](https://up.htmlacademy.ru/adaptive/29/user/2213125).
-* Наставник: `Неизвестно`.
+* Наставник: [Екатерина Комнатная](https://htmlacademy.ru//profile/id215761).
 
 ---
 
