@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Подбор программы</title>
+</head>
+
+<body class="page__body">
+  <!-- шапка сайта -->
+  <header class="main-header">
+    <a class="main-header__logo">
+      <img class="main-header__logo-image" src="" width="" height="" alt="">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item main-nav__item--current">
+            <a>Подбор программы</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Содержимое страницы -->
+  <main class="main-container">
+    <h1 class="main-container__title">Подбор программы</h1>
+    <p class="main-container__instruction">
+      Заполните анкету, и мы подберем
+      программу питания для вашего кота
+    </p>
+    <form class="main-container__filter" action="https://echo.htmlacademy.ru/" method="post">
+      <fieldset class="main-container__fieldset">
+        <legend class="visually-hidden">Технические характеристики кота.</legend>
+        <label for="" class="main-container__label">
+          Имя:*
+          <input class="main-container__input" name="cat-name" type="text" placeholder="Барсик">
+        </label>
+        <label for="" class="main-container__label">
+          Вес (кг):*
+          <input class="main-container__input" name="cat-weight" type="number" placeholder="7">
+        </label>
+        <label for="" class="main-container__label">
+          Возраст (лет):
+          <input class="main-container__input" name="cat-age" type="number" placeholder="7">
+        </label>
+      </fieldset>
+      <fieldset class="main-container__fieldset">
+        <legend class="visually-hidden">Выбор программы питания.</legend>
+        <label class="main-container__label">
+          <input class="main-container__radio" type="radio" name="program-selection" value="weight-loss" checked>
+          Похудение
+        </label>
+        <label class="main-container__label">
+          <input class="main-container__radio" type="radio" name="program-selection" value="weight-gain">
+          Набор массы
+        </label>
+        <label class="main-container__label">
+          <input class="main-container__radio" type="radio" name="program-selection" value="need-advice">
+          Не знаю (нужен ваш совет)
+        </label>
+      </fieldset>
+      <fieldset class="main-container__fieldset">
+        <legend class="main-container__legend">Контактные данные (владельца кота)</legend>
+        <label class="main-container__label">
+          E-mail:*
+          <input class="main-container__input" name="e-mail" type="email" placeholder="kuklachev@gmail.com">
+        </label>
+        <label class="main-container__label">
+          Телефон:*
+          <input class="main-container__input" name="phone" type="tel" placeholder="8 (960) 900-60-90">
+        </label>
+      </fieldset>
+      <fieldset class="main-container__fieldset">
+        <legend class="main-container__legend">Комментарий</legend>
+        <label for="" class="main-container__label">
+          Нужен ли тут лейбл или легенд?
+          <textarea class="main-container__input" name="comment" type="text"
+            placeholder="Расскажите обо всех повадках кота"></textarea>
+        </label>
+      </fieldset>
+      <fieldset class="main-container__fieldset">
+        <legend class="main-container__legend">Дополнительные требования.</legend>
+        <label class="main-container__label">
+          <input class="main-container__checkbox" type="checkbox" name="sweetener" checked>
+          Сахарозаменитель
+        </label>
+        <label class="main-container__label">
+          <input class="main-container__checkbox" type="checkbox" name="drinking-water">
+          Питьевая вода
+        </label>
+        <label class="main-container__label">
+          <input class="main-container__checkbox" type="checkbox" name="milk">
+          Молоко
+        </label>
+        <label class="main-container__label">
+          <input class="main-container__checkbox" type="checkbox" name="vitamins">
+          Витамины
+        </label>
+      </fieldset>
+      <button class="main-container__button-primary" type="submit">Отправить заявку</button>
+      <p class="main-container__text">* — Обязательные поля</p>
+    </form>
+  </main>
+  <!-- footer сайта -->
+  <footer class="main-footer">
+    <p class="main-footer__invite">Приглашаем к сотрудничеству дилеров!</p>
+    <address class="main-footer_address">
+      ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+    </address>
+    <!-- тут будет карта -->
+    <a href="" class="main-footer__logo">
+      <span class="vissually-hidden">Логотип Cat Energy.</span>
+    </a>
+    <ul class="main-footer__socials-list">
+      <li class="main-footer__socials-item">
+        <a href="" class="main-footer__socials-link">
+          <span class="vissualy-hidden">Вконтакте.</span>
+        </a>
+      </li>
+      <li class="main-footer__socials-item">
+        <a href="" class="main-footer__socials-link">
+          <span class="vissualy-hidden">Ютуб.</span>
+        </a>
+      </li>
+      <li class="main-footer__socials-item">
+        <a href="" class="main-footer__socials-link">
+          <span class="vissualy-hidden">Телеграм.</span>
+        </a>
+      </li>
+    </ul>
+    <div class="main-footer__academy academy">
+      <a href="" class="academy__link-text">HTML Academy</a>
+      <a href="" class="academy__link-image">
+        <span class="visually-hidden">Лого HTML Academy.</span>
+      </a>
+    </div>
+  </footer>
+</body>
+
+</html>
