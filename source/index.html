@@ -9,12 +9,17 @@
 <body class="page__body">
   <!-- шапка сайта -->
   <header class="main-header">
-    <a class="main-header__logo">
-      <img class="main-header__logo-image" src="" width="" height="" alt="">
+    <a class="main-header__logo logo" href="index.html">
+      <img class="logo-image" src="image/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи">
+      <img class="logo-name" src="image/logo-mobile-2.svg" width="101" height="18" alt="Текстовый логотип">
     </a>
+
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
+        <span class="main-nav__burger"></span>
+        <span class="main-nav__burger"></span>
+        <span class="main-nav__burger"></span>
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
@@ -38,41 +43,43 @@
     <section class="hero">
       <h2 class="hero__title">Функциональное питание для котов</h2>
       <p class="hero__slogan">Занялся собой? Займись котом</p>
-      <img class="hero__image" src="" width="" height="" alt="">
-      <a class="hero__button-primary button-primary">Подобрать программу</a>
+      <img class="hero__image" src="image/hero-mobile" width="280" height="270" alt="Упаковка с кормом">
+      <a class="hero__button-primary button-primary" href="form.html">Подобрать программу</a>
     </section>
     <!-- Секция программ питания -->
     <section class="nutrition-programs">
       <h2 class="visually-hidden">Программы питания.</h2>
       <!-- Программа для похудения -->
-      <dl class="nutrition-programs__list">
-        <div class="nutrition-programs__item nutrition-programs__item--slim">
-          <dt class="nutrition-programs__name">
+      <dl class="nutrition-programs__list nutrition">
+        <div class="nutrition-programs__item nutrition__card nutrition__card--slim">
+          <dt class="nutrition__name">
             Похудение
           </dt>
-          <dd class="nutrition-programs__description">
+          <dd class="nutrition__description">
             Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
             Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
           </dd>
-          <a class="nutrition-programs__button">Каталог slim</a>
+          <a class="nutrition__button" href="catalog-slim.html">Каталог slim</a>
         </div>
         <!-- Программа для набора массы -->
-        <div class="nutrition-programs__item nutrition-programs__item--pro">
-          <dt class="nutrition-programs__name">
+        <div class="nutrition-programs__item nutrition__card nutrition__card--pro">
+          <dt class="nutrition__name">
             Набор массы
           </dt>
-          <dd class="nutrition-programs__description">
+          <dd class="nutrition__description">
             Заработать авторитет среди дворовых котов и даже собак?
             Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
           </dd>
-          <a class="nutrition-programs__button">Каталог pro</a>
+          <a class="nutrition__button" href="catalog-pro.html">Каталог pro</a>
         </div>
       </dl>
     </section>
     <!-- Секция описания программ -->
     <section class="features">
       <h2 class="features__title">Как это работает</h2>
-      <ul class="features_list">
+      <ul class="features__list">
+        <!-- Хочу сделать блоком, но пока не сообразил как -->
+        <!-- <li class="features__item features-card"> -->
         <li class="features__item features__item--icon-leaf">
           Функциональное питание
           содержит только полезные
@@ -115,37 +122,52 @@
       </p>
       <p class="example__price">Затраты на питание: 15 000 руб.</p>
       <!-- Тут будет слайдер -->
+      <div class="example__slider slider">
+        <figure class="slider__wrapper slider__wrapper--fat">
+          <img src="image/boris-fat.png" alt="Толстый кот Борис.">
+        </figure>
+        <figure class="slider__wrapper slider__wrapper--thin">
+          <img src="image/boris-thin.png" alt="Худой кот Борис.">
+        </figure>
+        <button class="slider__toggle">
+          <span class="visually_hidden">Кнопка слайдера.</span>
+        </button>
+      </div>
     </section>
   </main>
   <footer class="main-footer">
     <p class="main-footer__invite">Приглашаем к сотрудничеству дилеров!</p>
-    <address class="main-footer_address">
+    <address class="main-footer__address">
       ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
     </address>
     <!-- тут будет карта -->
-    <a href="" class="main-footer__logo">
+    <div class="main-footer__map map">
+      <img class="map__img" src="image/map.png" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург.">
+      <img class="map__marker" src="image/marker.svg" alt="Метка на карте.">
+    </div>
+    <a href="index.html" class="main-footer__logo">
       <span class="vissually-hidden">Логотип Cat Energy.</span>
     </a>
     <ul class="main-footer__socials-list">
       <li class="main-footer__socials-item">
-        <a href="" class="main-footer__socials-link">
+        <a href="https://vk.com/htmlacademy" class="main-footer__socials-link">
           <span class="vissualy-hidden">Вконтакте.</span>
         </a>
       </li>
       <li class="main-footer__socials-item">
-        <a href="" class="main-footer__socials-link">
+        <a href="https://www.youtube.com/user/htmlacademyru" class="main-footer__socials-link">
           <span class="vissualy-hidden">Ютуб.</span>
         </a>
       </li>
       <li class="main-footer__socials-item">
-        <a href="" class="main-footer__socials-link">
+        <a href="https://t.me/htmlacademy" class="main-footer__socials-link">
           <span class="vissualy-hidden">Телеграм.</span>
         </a>
       </li>
     </ul>
     <div class="main-footer__academy academy">
-      <a href="" class="academy__link-text">HTML Academy</a>
-      <a href="" class="academy__link-image">
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="academy__link-text">HTML Academy</a>
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="academy__link-image">
         <span class="visually-hidden">Лого HTML Academy.</span>
       </a>
     </div>
