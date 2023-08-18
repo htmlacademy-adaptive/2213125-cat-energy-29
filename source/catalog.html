@@ -4,14 +4,15 @@
 <head>
   <meta charset="utf-8">
   <title>Каталог продукции</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <!-- шапка сайта -->
   <header class="main-header">
     <a class="main-header__logo logo" href="index.html">
-      <img class="logo-image" src="image/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи">
-      <img class="logo-name" src="image/logo-mobile-2.svg" width="101" height="18" alt="Текстовый логотип">
+      <img class="logo-image" src="img/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи">
+      <img class="logo-name" src="img/logo-text-mobile.svg" width="101" height="18" alt="Текстовый логотип">
     </a>
 
     <nav class="main-nav">
@@ -24,13 +25,13 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item main-nav__item--current">
-            <a>Каталог продукции</a>
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="form.html">Подбор программы</a>
+            <a class="main-nav__link main-nav__link--current">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -41,11 +42,11 @@
     <h1 class="main-container__title">Каталог продукции</h1>
     <!-- блок с товарами -->
     <section class="main-container__products">
-      <h2 class="vissually-hidden">Основные товары</h2>
+      <h2 class="visually-hidden">Основные товары</h2>
       <!-- карточки товаров -->
       <div class="main-container__card-primary card-primary">
         <a class="card-primary__link-image" href="pro-500-chicken.html">
-          <img class="card-primary__image" src="image/products/pro-500-chicken.png"
+          <img class="card-primary__image" src="img/products/pro-500-chicken.png"
             alt="Cat Energy PRO 500 со вкусом курицы.">
         </a>
         <a class="card-primary__link-title" href="pro-500-chicken.html">
@@ -67,7 +68,7 @@
       </div>
       <div class="main-container__card-primary card-primary">
         <a class="card-primary__link-image" href="pro-1000-chicken.html">
-          <img class="card-primary__image" src="image/products/pro-1000-chicken.png"
+          <img class="card-primary__image" src="img/products/pro-1000-chicken.png"
             alt="Cat Energy PRO 1000 со вкусом курицы.">
         </a>
         <a class="card-primary__link-title" href="pro-1000-chicken.html">
@@ -89,7 +90,7 @@
       </div>
       <div class="main-container__card-primary card-primary">
         <a class="card-primary__link-image" href="pro-500-fish.html">
-          <img class="card-primary__image" src="image/products/pro-500-fish.png"
+          <img class="card-primary__image" src="img/products/pro-500-fish.png"
             alt="Cat Energy PRO 500 со вкусом рыбы.">
         </a>
         <a class="card-primary__link-title" href="pro-500-fish.html">
@@ -111,7 +112,7 @@
       </div>
       <div class="main-container__card-primary card-primary">
         <a class="card-primary__link-image" href="pro-1000-fish.html">
-          <img class="card-primary__image" src="image/products/pro-1000-fish.png"
+          <img class="card-primary__image" src="img/products/pro-1000-fish.png"
             alt="Cat Energy PRO 1000 грамм со вкусом рыбы.">
         </a>
         <a class="card-primary__link-title" href="pro-1000-fish.html">
@@ -133,7 +134,7 @@
       </div>
       <div class="main-container__card-primary card-primary">
         <a class="card-primary__link-image" href="slim-500-buckwheat.html">
-          <img class="card-primary__image" src="image/products/slim-500-buckwheat.png"
+          <img class="card-primary__image" src="img/products/slim-500-buckwheat.png"
             alt="Cat Energy SLIM 500 со вкусом гречки.">
         </a>
         <a class="card-primary__link-title" href="slim-500-buckwheat.html">
@@ -155,7 +156,7 @@
       </div>
       <div class="main-container__card-primary card-primary">
         <a class="card-primary__link-image" href="slim-1000-buckwheat.html">
-          <img class="card-primary__image" src="image/products/slim-1000-buckwheat.png"
+          <img class="card-primary__image" src="img/products/slim-1000-buckwheat.png"
             alt="Cat Energy SLIM 1000 со вкусом гречки.">
         </a>
         <a class="card-primary__link-title" href="slim-1000-buckwheat.html">
@@ -177,7 +178,7 @@
       </div>
       <div class="main-container__card-primary card-primary">
         <a class="card-primary__link-image" href="slim-500-rice.html">
-          <img class="card-primary__image" src="image/products/slim-500-rice.png"
+          <img class="card-primary__image" src="img/products/slim-500-rice.png"
             alt="Cat Energy SLIM 500 со вкусом риса.">
         </a>
         <a class="card-primary__link-title" href="slim-500-rice.html">
