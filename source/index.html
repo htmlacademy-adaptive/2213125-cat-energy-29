@@ -4,14 +4,15 @@
 <head>
   <meta charset="utf-8">
   <title>Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <!-- шапка сайта -->
   <header class="main-header">
     <a class="main-header__logo logo" href="index.html">
-      <img class="logo-image" src="image/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи">
-      <img class="logo-name" src="image/logo-mobile-2.svg" width="101" height="18" alt="Текстовый логотип">
+      <img class="logo-image" src="img/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи">
+      <img class="logo-name" src="img/logo-text-mobile.svg" width="101" height="18" alt="Текстовый логотип">
     </a>
 
     <nav class="main-nav">
@@ -23,14 +24,14 @@
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--current">
-            <a>Главная</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--current">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="catalog.html">Каталог продукции</a>
+            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="main-nav__item">
-            <a href="form.html">Подбор программы</a>
+            <a class="main-nav__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -41,10 +42,12 @@
     <h1 class="visually-hidden">Кэт энерджи.</h1>
     <!-- Секция hero -->
     <section class="hero">
-      <h2 class="hero__title">Функциональное питание для котов</h2>
-      <p class="hero__slogan">Занялся собой? Займись котом</p>
-      <img class="hero__image" src="image/hero-mobile" width="280" height="270" alt="Упаковка с кормом">
-      <a class="hero__button-primary button-primary" href="form.html">Подобрать программу</a>
+      <div class="hero__wrapper">
+        <h2 class="hero__title">Функциональное питание для котов</h2>
+        <p class="hero__slogan">Занялся собой? Займись котом!</p>
+      </div>
+      <img class="hero__image" src="img/hero.png" width="280" height="270" alt="Упаковка с кормом">
+      <a class="hero__button-primary button-primary button-primary--small" href="form.html">Подобрать программу</a>
     </section>
     <!-- Секция программ питания -->
     <section class="nutrition-programs">
@@ -124,10 +127,10 @@
       <!-- Тут будет слайдер -->
       <div class="example__slider slider">
         <figure class="slider__wrapper slider__wrapper--fat">
-          <img src="image/boris-fat.png" alt="Толстый кот Борис.">
+          <img src="img/slider/boris-fat.png" alt="Толстый кот Борис.">
         </figure>
         <figure class="slider__wrapper slider__wrapper--thin">
-          <img src="image/boris-thin.png" alt="Худой кот Борис.">
+          <img src="img/slider/boris-thin.png" alt="Худой кот Борис.">
         </figure>
         <button class="slider__toggle">
           <span class="visually_hidden">Кнопка слайдера.</span>

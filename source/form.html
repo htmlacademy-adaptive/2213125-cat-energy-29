@@ -4,14 +4,15 @@
 <head>
   <meta charset="utf-8">
   <title>Подбор программы</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <!-- шапка сайта -->
   <header class="main-header">
     <a class="main-header__logo logo" href="index.html">
-      <img class="logo-image" src="image/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи">
-      <img class="logo-name" src="image/logo-mobile-2.svg" width="101" height="18" alt="Текстовый логотип">
+      <img class="logo-image" src="img/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи">
+      <img class="logo-name" src="img/logo-text-mobile.svg" width="101" height="18" alt="Текстовый логотип">
     </a>
 
     <nav class="main-nav">
@@ -24,13 +25,13 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="index.html">Главная</a>
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="catalog.html">Каталог продукции</a>
+            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="main-nav__item main-nav__item--current">
-            <a>Подбор программы</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--current">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -94,7 +95,7 @@
         </label>
       </fieldset>
       <fieldset class="form__fieldset">
-        <legend class="form__legend">Дополнительные требования.</legend>
+        <legend class="form__legend">Дополнительно</legend>
         <label class="form__label">
           <input class="form__checkbox" type="checkbox" name="sweetener" checked>
           Сахарозаменитель
@@ -112,7 +113,7 @@
           Витамины
         </label>
       </fieldset>
-      <button class="form__button-primary" type="submit">Отправить заявку</button>
+      <button class="form__button-primary button-primary" type="submit">Отправить заявку</button>
       <p class="form__text">* — Обязательные поля</p>
     </form>
   </main>
